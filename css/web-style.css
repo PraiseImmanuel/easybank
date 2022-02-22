@@ -1,0 +1,456 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: hsl(0, 0%, 98%);
+    color:  hsl(233, 8%, 62%);
+    font-size: 1.125em;
+    font-family: "Public sans", sans-serif;
+}
+
+a{
+    color: hsl(233, 8%, 62%);
+    font-size: 1rem;
+    text-decoration: none;
+}
+
+h1{
+    font-size: 2.875rem;
+}
+
+h2{
+    font-size: 2.25rem;
+}
+
+h1,h2,h3,h4{
+    font-weight: 400;
+    color: hsl(233, 26%, 24%);
+    padding: 1.3rem 0;
+}
+
+svg{
+    color: #fff;
+}
+
+nav{
+    background-color: hsl(0, 0%, 100%);
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7rem;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+}
+
+div.links ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+li{
+    margin: 0 1rem;
+    padding: 1.625rem 0;
+    border-bottom: 0.25rem solid transparent;
+}
+
+nav li:hover{
+    border-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    border-image-slice: 1;
+}
+
+nav li:hover a{
+    color: hsl(233, 26%, 24%);
+}
+
+div.request a{
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+    color: hsl(0, 0%, 100%);
+}
+
+
+div.request a:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+div.hamburger{
+    display: none;
+}
+
+article{
+    display: flex;
+}
+
+div.article-one-text{
+    align-self: center;
+    padding-left: 7rem;
+    width: 35%;
+}
+
+div.article-one-text p{
+    margin:0 0 2.5rem;
+}
+
+div.article-one-text a{
+    background-image: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%));
+    padding: 0.7rem 1.5rem;
+    border-radius: 2rem;
+    color: hsl(0, 0%, 100%);
+}
+
+div.article-one-text a:hover{
+    opacity: 0.5;
+    filter: alpha(opacity=50);
+}
+
+div.article-one-image{
+    background-image: url(bg-intro-desktop.svg);
+    background-repeat: no-repeat;
+    background-position:left bottom;
+    width:65%;
+    display: flex;
+    justify-content: end;
+}
+
+article.article-two{
+    flex-direction: column;
+    background-color: hsl(220, 16%, 96%);
+    margin-top: -5rem;
+    padding: 7rem;
+}
+
+div.sections-one, div.sections-two{
+    display: flex;
+    margin-top: 3rem;
+}
+
+div.sections-one section, div.sections-two section{
+    padding-right: 1.5rem;
+}
+
+div.sections-one section:last-child, div.sections-two section:last-child{
+    padding-right: 0;
+}
+
+div.sections-one section img{
+    width: 3.5rem;
+    height: 3.5rem;
+}
+
+article.article-three{
+    flex-direction: column;
+    padding: 7rem;
+}
+
+figure img{
+    width: 100%;
+}
+
+figcaption{
+    font-size: 0.875rem;
+    padding: 0 1.625rem;
+    background-color: hsl(0, 27%, 100%);
+}
+
+div.sections-two h4:hover{
+    color: hsl(192, 70%, 51%);
+    transition: all 0.5s;
+}
+
+div.sections-two p{
+    height: 9.187rem;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+div.sections-two p,  div.sections-two h4{
+    padding: 0.3rem 1.625rem 0.5rem;
+    background-color: hsl(0, 27%, 100%);
+}
+
+footer{
+    background-color:  hsl(233, 26%, 24%);
+    display: flex;
+    flex-direction: column;
+    padding: 2.5rem 7rem;
+}
+
+div.site-footer div.logo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.site-footer{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+div.social-media-icons a{
+    margin-right: 0.7rem;
+}
+
+div.social-media-icons a:hover svg{
+    color: hsl(192, 70%, 51%);
+}
+
+div.links-one, div.links-two{
+    display: flex;
+    flex-direction: column;
+}
+
+div.links-one a, div.links-two a{
+    margin-top: 1rem;
+    color: hsl(0, 0%, 96%);
+}
+
+div.links-one a:hover, div.links-two a:hover, div.attribution-container a:hover{
+    color: hsl(192, 70%, 51%);
+}
+
+div.request-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+div.request-box p{
+    font-size: 1rem;
+}
+
+div.attribution-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+div.attribution-container a{
+    color: hsl(0, 0%, 96%);
+}
+
+@media screen and (max-width:1240px){
+    div.article-one-text{
+        width: 45%;
+    }   
+
+    div.article-one-image{
+        width: 55%;
+    }
+
+    div.article-one-image img{
+        width: 88%;
+    }
+}
+
+@media screen and (max-width:1036px){
+    div.sections-one section, div.sections-two section{
+        width: 23rem;
+        padding-right: 0;
+    }
+
+    div.sections-one, div.sections-two{
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    section:nth-child(3),section:nth-child(4){
+        margin-top: 5rem;
+    }
+
+    div.sections-one section:nth-child(1), div.sections-two section:nth-child(1), 
+    div.sections-one section:nth-child(3), div.sections-two section:nth-child(3){
+        padding-right: 2rem;
+    }
+}
+
+@media screen and (max-width:965px){
+    nav{
+        padding: 1.625rem 5rem ;
+    }
+
+    div.hamburger{
+        display: block;
+    }
+
+    div.links{
+        display: none;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: hsla(233, 26%, 24%, 0.897);
+        padding: 2rem 8rem 2.625rem;
+        text-align: center;
+    }
+
+    div.links ul{ 
+        flex-direction: column;
+    }
+
+    div.links ul a{
+        color: hsl(0, 0%, 96%);
+    }    
+
+    div.links ul li:hover a{
+        color: hsl(233, 8%, 62%);
+    }    
+
+    nav div.request{
+        display: none;
+    }
+
+    div.hamburger img{
+        width: 1.6rem;
+    }
+
+    article.article-one{
+        flex-direction: column-reverse;
+    }
+
+    div.article-one-text{
+        padding: 2rem 5rem;
+    }
+
+    div.article-one-text, div.article-one-image{
+        width: 100%;
+    }
+
+    article.article-two, article.article-three{
+        padding:5rem;
+    }
+
+    article.article-two{
+        margin-top: 0;
+    }
+
+    div.sections-one section:nth-child(1), div.sections-two section:nth-child(1), 
+    div.sections-one section:nth-child(3), div.sections-two section:nth-child(3){
+        padding-right: 0;
+    }
+
+    footer{
+        padding: 2.5rem 5rem;
+    }
+}
+
+@media screen and (max-width:896px) {
+    body{
+        text-align: center;
+    }
+
+    div.sections-one, div.sections-two{
+        justify-content: center;
+    }
+
+    div.sections-one section, div.sections-two section{
+        width: 80%;
+        margin-top: 2rem;
+    }
+
+    div.sections-one section{
+        text-align: center;
+    }
+
+    div.sections-one section img{
+        width: 4.5rem;
+        height: 4.5rem;
+    }
+
+    div.sections-two{
+        text-align: left;
+        margin-top: 0;
+    }
+
+    div.site-footer{
+        margin-bottom: 3rem;
+    }
+    
+    div.site-footer, div.attribution-container{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+
+    div.logo-png,div.social-media-icons,div.links-two, div.request-box,div.request-box div.request{
+        margin-bottom: 2rem;
+    }
+
+    div.attribution-container p:first-child{
+        margin-bottom: 1rem;
+    }
+}
+
+@media screen and (max-width:540px) {
+    nav{
+        padding: 1.625rem 2rem;
+    }
+
+    div.links{
+        left: auto;
+        top: 5rem;
+    }
+
+    div.article-one-image{
+        background-image: url(bg-intro-mobile.svg);
+        background-position: right top;
+        padding-bottom: 5rem;
+    }
+
+    div.article-one-image img {
+        width: 100%;
+    }
+
+    article.article-two, article.article-three{
+        padding: 7rem 2rem;
+    }
+
+    div.article-one-text{
+        padding: 2rem;
+    }
+
+    footer{
+        padding: 2.5rem 0;
+    }
+
+    div.article-one-text h1{
+        font-size: 2.5rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    div.sections-one section, div.sections-two section{
+        width: 100%;
+    }
+    
+}
+
+@media screen and (max-width:370px) {
+    nav{
+        padding: 1.625rem 1rem;
+    }
+
+    article.article-two, article.article-three{
+        padding: 7rem 1rem;
+    }
+
+    div.article-one-text{
+        padding: 1.5rem;
+    }
+
+    div.article-one-text h1{
+        font-size: 2.25rem;
+    }
+
+    h2{
+        font-size: 1.875rem;
+    }
+
+}
