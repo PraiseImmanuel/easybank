@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://https://github.com/PraiseImmanuel/easybank)
+- Solution URL: [Add solution URL here](https://github.com/PraiseImmanuel/easybank)
 - Live Site URL: [Add live site URL here](https://praiseimmanuel.github.io/easybank/)
 
 ## My process
