@@ -392,7 +392,8 @@ div.attribution-container a{
     }
 
     div.links{
-        left: auto;
+        left: 0;
+        right: 0;
         top: 5rem;
     }
 
